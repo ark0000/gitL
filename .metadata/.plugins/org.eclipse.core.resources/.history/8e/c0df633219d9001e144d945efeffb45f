@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form</title>
+</head>
+<body>
+<form action="addbatch" method="get">
+<label for="">BatchName</label><br>
+<input  type="text" name="batchName" ><br>
+<label for="">InsName</label><br>
+<input  type="text" name="InsName" ><br>
+<label for="">Date</label><br>
+<input  type="text" name="Date" ><br>
+
+<input  type="submit" name="batch" value="createBatch" >
+
+</form>
+POST
+<form action="addbatch" method="post">
+<label for="">BatchName</label><br>
+<input  type="text" name="batchName" ><br>
+<label for="">InsName</label><br>
+<input  type="text" name="InsName" ><br>
+<label for="">Password</label><br>
+<input  type="password" name="Date" ><br>
+<label for="">Date</label><br>
+<input  type="date" name="Date" ><br>
+
+<input  type="submit" name="batch" value="createBatch" >
+
+</form>
+</body>
+</html>

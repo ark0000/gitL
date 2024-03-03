@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form</title>
+</head>
+<body>
+<form action="addBatch" method="get">
+<label for="">BatchName</label><br>
+<input  type="text" name="batchName" ><br>
+<label for="">InsName</label><br>
+<input  type="text" name="InsName" ><br>
+<label for="">Date</label><br>
+<input  type="text" name="Date" ><br>
+
+
+<br><label>radioButt</label>
+<br>1 <input type="radio" name="rad" value="1">
+<br>2 <input type="radio" name="rad" value="2">
+<br>3 <input type="radio" name="rad" value="3">
+
+<input  type="submit" name="batch" value="createBatch" >
+</form>
+
+</body>
+</html>

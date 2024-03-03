@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;sevs/src/main/java/com/eserv/BatchServlet.java&apos;" deleteContents="false" description="Delete resource &apos;sevs/src/main/java/com/eserv/BatchServlet.java&apos;" element1="/sevs/src/main/java/com/eserv/BatchServlet.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1709444280850"/>
+</session>

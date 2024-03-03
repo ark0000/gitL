@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form</title>
+</head>
+<body>
+<form action="addbatch" method="get">
+<label for="">BatchName</label><br>
+<input  type="text" name="batchName" >
+<label for="">InsName</label><br>
+<input  type="text" name="InsName" >
+<label for="">Date</label><br>
+<input  type="text" name="Date" >
+
+<input  type="submit" name="batch" value="createNatch" >
+
+</form>
+
+
+</body>
+</html>

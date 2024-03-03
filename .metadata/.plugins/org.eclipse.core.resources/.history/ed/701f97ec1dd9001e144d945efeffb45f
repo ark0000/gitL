@@ -1,0 +1,41 @@
+package com.eserv;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class BatchServlet
+ */
+@WebServlet(urlPatterns = {"addBatch"})
+public class BatchServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public BatchServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+    
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    	// TODO Auto-generated method stub
+    	resp.setContentType("text/html");
+        PrintWriter out=resp.getWriter();
+        String batchname= req.getParameter("batch-name");
+        String insName= req.getParameter("InsName");
+        String date= req.getParameter("Date");
+        String batchname= req.getParameter("batch-name");
+        out.close();
+    }
+    
+    
+}
