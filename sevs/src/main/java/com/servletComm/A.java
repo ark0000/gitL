@@ -32,7 +32,8 @@ public class A extends HttpServlet {
 		out.println("<h1>A </hello>");
 //		System.out.println("<h1>Hello</hello>"); console
 		//forward
-		request.getRequestDispatcher("/B").forward(request, response);
+	//	request.getRequestDispatcher("/B").forward(request, response);
+			request.getRequestDispatcher("/B").include(request, response);
 		
 		out.close();
 	}
