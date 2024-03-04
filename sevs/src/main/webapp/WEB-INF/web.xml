@@ -19,4 +19,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>homeServ</display-name>
+    <servlet-name>homeServ</servlet-name>
+    <servlet-class>com.servSession.homeServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>homeServ</servlet-name>
+    <url-pattern>/homeServ</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DashBoard</display-name>
+    <servlet-name>DashBoard</servlet-name>
+    <servlet-class>com.servSession.DashBoard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DashBoard</servlet-name>
+    <url-pattern>/DashBoard</url-pattern>
+  </servlet-mapping>
 </web-app>
