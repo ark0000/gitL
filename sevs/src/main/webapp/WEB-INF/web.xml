@@ -19,4 +19,34 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>A</display-name>
+    <servlet-name>A</servlet-name>
+    <servlet-class>com.servletComm.A</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>A</servlet-name>
+    <url-pattern>/A</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>B</display-name>
+    <servlet-name>B</servlet-name>
+    <servlet-class>com.servletComm.B</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>B</servlet-name>
+    <url-pattern>/B</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>C</display-name>
+    <servlet-name>C</servlet-name>
+    <servlet-class>com.servletComm.C</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>C</servlet-name>
+    <url-pattern>/C</url-pattern>
+  </servlet-mapping>
 </web-app>
