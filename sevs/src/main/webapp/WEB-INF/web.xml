@@ -49,4 +49,14 @@
     <servlet-name>C</servlet-name>
     <url-pattern>/C</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServContext</display-name>
+    <servlet-name>ServContext</servlet-name>
+    <servlet-class>com.servletComm.ServContext</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServContext</servlet-name>
+    <url-pattern>/sc</url-pattern>
+  </servlet-mapping>
 </web-app>
