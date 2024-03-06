@@ -59,4 +59,34 @@
     <servlet-name>Dashboard</servlet-name>
     <url-pattern>/Dashboard</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HomeServHTTP</display-name>
+    <servlet-name>HomeServHTTP</servlet-name>
+    <servlet-class>com.servHttpSession.HomeServHTTP</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServHTTP</servlet-name>
+    <url-pattern>/HomeServHTTP</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DashBoardHTTP</display-name>
+    <servlet-name>DashBoardHTTP</servlet-name>
+    <servlet-class>com.servHttpSession.DashBoardHTTP</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DashBoardHTTP</servlet-name>
+    <url-pattern>/DashBoardHTTPS</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>logout</display-name>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>com.servHttpSession.logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -1,24 +1,25 @@
-package com.servSessionCookie;
+package com.servHttpSession;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Servlet implementation class DashBoard
+ * Servlet implementation class logout
  */
-public class DashBoard extends HttpServlet {
+public class logout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DashBoard() {
+    public logout() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,26 +28,14 @@ public class DashBoard extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		response.setContentType("text/html");
 		PrintWriter pw=response.getWriter();
-	
-		Cookie[] cookies=request.getCookies();
-	boolean ssID=false;
-	for(Cookie c:cookies) {
-		String name=c.getName();
-		if(name.equals("sssID")) {
-			ssID=true;
-			pw.print(c.getValue());
-			break;
+		HttpSession session=request.getSession(false);
+		if(session!=null) {
+			session.invalidate();
 		}
-	}
+		pw.print("Successfully logged out");
 
-	if(ssID && request.getSession()!=null) {
-	 pw.println("COOKIE has ");
-	}
-	else {
-		pw.print("NO COOKIE");
-	}
 	}
 
 	/**
