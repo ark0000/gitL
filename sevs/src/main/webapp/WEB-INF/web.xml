@@ -99,4 +99,27 @@
     <servlet-name>login</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>voting</display-name>
+    <servlet-name>voting</servlet-name>
+    <servlet-class>com.filtervote.voting</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>voting</servlet-name>
+    <url-pattern>/voting</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>votefilter</display-name>
+    <filter-name>votefilter</filter-name>
+    <filter-class>com.filter.votefilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>votefilter</filter-name>
+    <url-pattern>/votefilter</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>votefilter</filter-name>
+    <servlet-name>voting</servlet-name>
+  </filter-mapping>
 </web-app>
